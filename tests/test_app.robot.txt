@@ -1,0 +1,8 @@
+*** Settings ***
+Library    RequestsLibrary
+
+*** Test Cases ***
+Check App Running
+    Create Session    mysession    http://localhost:5000
+    ${response}=    GET On Session    mysession    /
+    Should Be Equal As Strings    ${response.status_code}    200
