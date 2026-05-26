@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello Azure!"
+    return "Hello,Welcome to Microsoft Azure!" 
 
 if __name__ == '__main__':
     app.run()
